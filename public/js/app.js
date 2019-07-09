@@ -37419,6 +37419,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var elems = document.querySelectorAll(".modal");
   var instances = M.Modal.init(elems);
 });
+document.addEventListener("DOMContentLoaded", function () {
+  var elems = document.querySelectorAll(".sidenav");
+  var instances = M.Sidenav.init(elems);
+});
 
 var hjs = __webpack_require__(/*! ../../node_modules/highlightjs/highlight.pack */ "./node_modules/highlightjs/highlight.pack.js");
 

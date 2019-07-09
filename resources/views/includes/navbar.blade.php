@@ -3,6 +3,7 @@
 
       <div class="container">
           <a href="#"  class="brand-logo black-text"><i class="material-icons">developer_mode</i>Snippetshare</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           @guest
               <li><a href="/" class=" black-text">Home</a></li>
@@ -20,3 +21,15 @@
       </div>
     </div>
   </nav>
+  <ul class="sidenav" id="mobile-demo">
+    @guest
+              <li><a href="/" class=" black-text">Home</a></li>
+              @else
+              <li><a href="/feed" class=" black-text">Home</a></li>
+              <li><a href="/upload" class=" black-text">Upload</a></li>
+              <li><a href="/dashboard" class=" black-text">Dashboard</a></li>
+              <li>
+              <a class="btn brown darken-1" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+            </li>
+          @endguest
+  </ul>

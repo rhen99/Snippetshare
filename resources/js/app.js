@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var instances = M.Modal.init(elems);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    var elems = document.querySelectorAll(".sidenav");
+    var instances = M.Sidenav.init(elems);
+});
+
 const hjs = require("../../node_modules/highlightjs/highlight.pack");
 hjs.initHighlightingOnLoad();
 
